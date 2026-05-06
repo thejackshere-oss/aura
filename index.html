@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | The Future of Artisanal Coffee</title>
+    <meta name="description" content="Experience the main character energy at Aura Cafe. Artisanal coffee, gourmet bites, and a Y2K futurist atmosphere.">
+    
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Aura Cafe",
+      "image": "cafe interior.png",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Futurist Way",
+        "addressLocality": "Design District",
+        "addressRegion": "CA"
+      },
+      "servesCuisine": "Artisanal Coffee, Gourmet Brunch",
+      "openingHours": "Mo-Su 08:00-22:00"
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F9F9F9; }
+        
+        /* Y2K Holographic Effect */
+        .holographic {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 50%, #fbc2eb 100%);
+            background-size: 200% 200%;
+            animation: holo-flow 5s ease infinite;
+        }
+        
+        @keyframes holo-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 250px;
+            gap: 1.5rem;
+        }
+
+        .bento-item:hover img { transform: scale(1.05); }
+        .bento-item img { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+
+        .custom-scrollbar::-webkit-scrollbar { height: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e0c3fc; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-[#1A1A1A] overflow-x-hidden">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 w-full z-[100] transition-all duration-300 py-4 glass-header border-b border-white/20">
+        <nav class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-800 tracking-tighter uppercase italic">Aura.</div>
+            <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-widest">
+                <a href="#menu" class="hover:opacity-50 transition">The Menu</a>
+                <a href="#gallery" class="hover:opacity-50 transition">Vibe</a>
+                <a href="#booking" class="hover:opacity-50 transition">Reservations</a>
+            </div>
+            <a href="#booking" class="holographic px-6 py-2.5 rounded-full text-[10px] font-800 uppercase tracking-widest text-white shadow-lg hover:brightness-110 transition">Book Table</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative h-[100vh] flex items-center justify-center overflow-hidden">
+            <img src="cafe interior.png" alt="High-end Interior" class="absolute inset-0 w-full h-full object-cover z-0">
+            <div class="absolute inset-0 bg-black/40 z-[1]"></div>
+            <div class="relative z-10 text-center px-6">
+                <span class="inline-block px-4 py-1 border border-white/30 rounded-full text-white text-[10px] uppercase tracking-[0.3em] mb-6 backdrop-blur-md">The New Standard</span>
+                <h1 class="text-6xl md:text-9xl font-800 text-white tracking-tighter leading-none mb-8 italic uppercase">Main Character<br>Energy.</h1>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="#menu" class="bg-white text-black px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest hover:scale-105 transition">Order Now</a>
+                    <a href="#booking" class="border border-white text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-widest backdrop-blur-md hover:bg-white/10 transition">Reserve Space</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                    <div>
+                        <h2 class="text-4xl md:text-6xl font-800 tracking-tighter uppercase mb-4">The Catalog</h2>
+                        <p class="text-[#1A1A1A]/60 max-w-sm">Curated flavors engineered for the modern palate.</p>
+                    </div>
+                    <div class="flex space-x-4 mt-6">
+                        <span class="text-xs font-bold uppercase underline decoration-[#e0c3fc] decoration-2">Brew</span>
+                        <span class="text-xs font-bold uppercase text-black/30">Bites</span>
+                        <span class="text-xs font-bold uppercase text-black/30">Sweets</span>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 holographic opacity-20 blur-2xl group-hover:opacity-40 transition duration-1000"></div>
+                        <img src="coffee image.png" alt="Signature Latte" class="relative rounded-[40px] w-full shadow-2xl z-10">
+                        <div class="absolute top-6 right-6 z-20 holographic px-4 py-2 rounded-full text-white text-[10px] font-bold uppercase tracking-widest shadow-xl">Best Seller</div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="border-b border-black/5 pb-6 flex justify-between items-center group cursor-pointer">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase tracking-tight">Onyx Cold Brew</h3>
+                                <p class="text-sm text-black/50">24hr slow extraction, floral notes.</p>
+                            </div>
+                            <span class="text-xl font-light">$8.00</span>
+                        </div>
+                        <div class="border-b border-black/5 pb-6 flex justify-between items-center group cursor-pointer">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase tracking-tight">Aura Specialty Latte</h3>
+                                <p class="text-sm text-black/50">Oat milk, lavender-infused, iridescent foam.</p>
+                            </div>
+                            <span class="text-xl font-light">$9.50</span>
+                        </div>
+                        <div class="border-b border-black/5 pb-6 flex justify-between items-center group cursor-pointer">
+                            <div>
+                                <h3 class="text-xl font-bold uppercase tracking-tight">Cloud Matcha</h3>
+                                <p class="text-sm text-black/50">Ceremonial grade, vanilla cloud foam.</p>
+                            </div>
+                            <span class="text-xl font-light">$10.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO GALLERY -->
+        <section id="gallery" class="py-24 bg-[#1A1A1A] text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="bento-grid flex flex-col md:grid">
+                    <div class="md:col-span-2 md:row-span-2 bento-item relative rounded-[30px] overflow-hidden">
+                        <img src="girl.png" alt="Vibe" class="w-full h-full object-cover">
+                        <div class="absolute bottom-8 left-8">
+                            <h4 class="text-2xl font-bold italic">Main Character Vibe.</h4>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 bento-item relative rounded-[30px] overflow-hidden bg-neutral-800">
+                        <img src="avocado.png" alt="Food Quality" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:col-span-1 bento-item relative rounded-[30px] overflow-hidden holographic p-8 flex flex-col justify-end">
+                        <p class="text-sm font-bold uppercase tracking-widest text-black">High Quality</p>
+                        <p class="text-black/70 text-xs">Every ingredient is locally sourced and organic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVATIONS -->
+        <section id="booking" class="py-24 bg-[#F9F9F9]">
+            <div class="max-w-3xl mx-auto px-6 bg-white p-12 rounded-[50px] shadow-sm border border-black/5">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-800 uppercase tracking-tighter">Secure Your Space</h2>
+                    <p class="text-sm text-black/50">Exclusive tables available daily.</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest ml-2">Date</label>
+                            <input type="date" class="w-full p-4 rounded-2xl bg-neutral-50 border-none focus:ring-2 focus:ring-[#e0c3fc]">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest ml-2">Time</label>
+                            <input type="time" class="w-full p-4 rounded-2xl bg-neutral-50 border-none focus:ring-2 focus:ring-[#e0c3fc]">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-4 bg-neutral-50 rounded-2xl">
+                        <span class="text-sm font-bold uppercase">Special Occasion?</span>
+                        <input type="checkbox" class="w-6 h-6 rounded-full accent-[#e0c3fc]">
+                    </div>
+                    <button type="submit" class="w-full py-5 bg-black text-white rounded-full font-800 uppercase tracking-[0.2em] text-xs hover:bg-neutral-800 transition shadow-2xl">Confirm My Arrival</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="py-24 overflow-hidden">
+            <div class="flex space-x-8 animate-scroll custom-scrollbar overflow-x-auto px-6 pb-10">
+                <!-- Repeated Review Cards -->
+                <div class="min-w-[350px] bg-white p-8 rounded-[30px] border border-black/5">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-sm italic mb-6">"The holographic latte is not just for show—it tastes like pure luxury. Best spot in the city."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full holographic"></div>
+                        <span class="text-xs font-bold uppercase">S. Kapoor</span>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="min-w-[350px] bg-white p-8 rounded-[30px] border border-black/5">
+                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                    <p class="text-sm italic mb-6">"Architecture and coffee perfectly blended. It's a vibe I can't find anywhere else."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-neutral-200"></div>
+                        <span class="text-xs font-bold uppercase">James V.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / INFO HUB -->
+    <footer class="bg-white border-t border-black/5 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 mb-20">
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-widest mb-6">Location</h4>
+                <p class="text-xl">777 Glass Tower, Design District<br>Kolkata, WB 700001</p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-widest mb-6">Status</h4>
+                <div id="status-box" class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-green-50 text-green-600 text-xs font-bold">
+                    <span class="w-2 h-2 rounded-full bg-green-600 animate-pulse"></span>
+                    <span id="shop-status">Loading...</span>
+                </div>
+                <p class="mt-4 text-sm text-black/50">Daily: 08:00 AM - 10:00 PM</p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-widest mb-6">Connect</h4>
+                <div class="flex flex-col space-y-2 font-bold uppercase text-xs">
+                    <a href="#" class="hover:underline hover:text-[#e0c3fc]">WhatsApp Business</a>
+                    <a href="#" class="hover:underline hover:text-[#e0c3fc]">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-black/30 font-bold tracking-[0.5em] uppercase">
+            © 2026 Aura Cafe • All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Status Logic
+        function updateStatus() {
+            const now = new Date();
+            const hour = now.getHours();
+            const statusText = document.getElementById('shop-status');
+            const statusBox = document.getElementById('status-box');
+            
+            if (hour >= 8 && hour < 22) {
+                statusText.innerText = "OPEN NOW";
+            } else {
+                statusText.innerText = "CLOSED";
+                statusBox.classList.replace('bg-green-50', 'bg-red-50');
+                statusBox.classList.replace('text-green-600', 'text-red-600');
+            }
+        }
+        updateStatus();
+
+        // Cloud Migration Note:
+        // To deploy on AWS/Vercel:
+        // 1. Initialize a Git repo.
+        // 2. Add a `vercel.json` or `aws-exports` file.
+        // 3. For the booking form, replace this script with a fetch() call to a serverless function (Node.js/Python).
+    </script>
+</body>
+</html>
